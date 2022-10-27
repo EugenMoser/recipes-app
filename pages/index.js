@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+//import styles from "../styles/Home.module.css";
 import styled from "styled-components";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>My Recipes</title>
         <meta
@@ -18,19 +18,25 @@ export default function Home() {
         />
       </Head>
 
-      <Main>
-        <MainHeader> My Recipes</MainHeader>
-        <p> </p>
-      </Main>
+      <main>
+        <h1> My Recipes</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero eos et accusam et justo duo
+          dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+          sanctus est Lorem ipsum dolor sit amet.{" "}
+        </p>
+      </main>
     </div>
   );
 }
 
-const Main = styled.main`
+/* const Main = styled.main`
   text-align: center;
 `;
 
 const MainHeader = styled.h1`
   background-color: white;
   color: green;
-`;
+`; */
